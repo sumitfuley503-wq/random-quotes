@@ -1,0 +1,124 @@
+:root {
+    --primary-red: #ff003c;
+    --dark-bg: #0d0d0d;
+    --card-bg: #1a1a1a;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: 'Tiro Devanagari Hindi', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* The Main Container */
+.main-card {
+    background: var(--card-bg);
+    width: 90%;
+    max-width: 450px;
+    border: 3px solid var(--text-color);
+    box-shadow: 12px 12px 0px var(--primary-red); /* Sarcastic bold shadow */
+    position: relative;
+}
+
+/* Retro Window Top Bar */
+.top-bar {
+    background: var(--text-color);
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid var(--text-color);
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background: var(--dark-bg);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.window-title {
+    color: var(--dark-bg);
+    font-family: monospace;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* Content Layout */
+.content-area {
+    padding: 30px;
+    text-align: center;
+}
+
+.header-text {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+    color: var(--primary-red);
+}
+
+.header-text span {
+    background: var(--text-color);
+    color: var(--dark-bg);
+    padding: 2px 5px;
+}
+
+.display-box {
+    margin: 40px 0;
+    min-height: 120px;
+}
+
+#quote {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+#author {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* The Sarcastic Button */
+button {
+    background: var(--primary-red);
+    color: white;
+    border: 2px solid white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    transition: 0.1s;
+    outline: none;
+}
+
+button:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 0px white;
+}
+
+button:active {
+    transform: translate(0, 0);
+    box-shadow: 0px 0px 0px white;
+}
+
+.footer-note {
+    font-size: 10px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
